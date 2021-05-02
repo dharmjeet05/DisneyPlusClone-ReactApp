@@ -7,27 +7,27 @@ const Header = () => {
       <Logo src="/images/logo.svg" alt="Logo"></Logo>
 
       <NavMenu>
-        <a>
+        <a href="/#">
           <img src="/images/home-icon.svg" alt="Home Icon" />
           <span>HOME</span>
         </a>
-        <a>
+        <a href="/#">
           <img src="/images/search-icon.svg" alt="Search Icon" />
           <span>SEARCH</span>
         </a>
-        <a>
+        <a href="/#">
           <img src="/images/watchlist-icon.svg" alt="Watchlist Icon" />
           <span>WATCHLIST</span>
         </a>
-        <a>
+        <a href="/#">
           <img src="/images/original-icon.svg" alt="Originals Icon" />
           <span>ORIGINALS</span>
         </a>
-        <a>
+        <a href="/#">
           <img src="/images/movie-icon.svg" alt="Movies Icon" />
           <span>MOVIES</span>
         </a>
-        <a>
+        <a href="/#">
           <img src="/images/series-icon.svg" alt="Series Icon" />
           <span>SERIES</span>
         </a>
@@ -46,6 +46,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 36px;
+  overflow-x: hidden;
 `;
 
 const Logo = styled.img`
@@ -63,6 +64,7 @@ const NavMenu = styled.div`
     align-items: center;
     padding: 0 12px;
     cursor: pointer;
+    text-decoration: none;
 
     img {
       height: 20px;
@@ -72,6 +74,7 @@ const NavMenu = styled.div`
       font-size: 13px;
       letter-spacing: 1.42px;
       position: relative;
+      color: white;
 
       &:after {
         content: "";
